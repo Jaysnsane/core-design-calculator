@@ -107,7 +107,7 @@ function getVlldType(method?: string): string {
 /**
  * Pure formula engine for Core. No DOM, no browser APIs, no database access.
  */
-export function calculateSolarBatteryDesign(input: SolarBatteryCalculatorInput): SolarBatteryCalculatorResult {
+export function calculateSolarBatteryDesign(input) {
   const systemSizeKwDc = toNumber(input.systemSizeKwDc);
   const moduleWattage = toNumber(input.moduleWattage);
   const inverterBrand = input.inverterBrand ?? '';
