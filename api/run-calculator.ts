@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { calculateSolarBatteryDesign } from '../src/solarBatteryCalculator.ts';
+import { calculateSolarBatteryDesign } from '../src/solarBatteryCalculator';
 
 export default function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== 'POST') {
